@@ -1,3 +1,0 @@
-naming aggregations
-
-if you look back at all the exmaples so far, you'll see that all aggregations must be named. this is important because it allows you to use several aggregations simultaneously. for instance, we could specify a bucket and a metric.
