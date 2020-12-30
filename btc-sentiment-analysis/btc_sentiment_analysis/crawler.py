@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from newspaper import Article
+import article
 
 def scrape_btc_news():
 	
@@ -25,7 +26,22 @@ def scrape_btc_news():
 		}
 		news_items.append(article_dict)
 	
-	return news_items
+	# clean data, remove None values
+	news_items = [item for item in news_items if item['text'] != None]
+	
+	# create Article objects out of news_items
+	articles = []
+	for item in news_items:
+		a = article.Article(
+			title = item['title'],
+			source = item['source'],
+			date = item['date'],
+			link = item['link'],
+			text = item['text'],
+		)
+		articles.append(a)
+	
+	return articles
 
 def get_text(article_url):
 	try:
