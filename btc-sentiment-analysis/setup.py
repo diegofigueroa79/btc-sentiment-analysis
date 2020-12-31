@@ -20,9 +20,15 @@ setup(
 	],
 	python_requires='>=3.6',
 	install_requires=[
-		'pandas',
-		'numpy',
+		'beautifulsoup4',
+		'lxml',
 		'matplotlib',
+		'newspaper3k',
+		'nltk',
+		'pandas',
+		'requests',
+		'seaborn',
+		'textblob',
 	],
 	extras_require={
 		'dev': ['pytest'],
