@@ -40,7 +40,7 @@ class Article:
 The function visualize simply plots an example Violin Plot using seaborn. Visualize takes any list of Article objects and returns a seaborn violin plot
 showing the distribution of the sentiment analysis for Article.title and Article.text using nltk's Vader, and Text Blob.
 
-![Bitcoin Activity vs Price](https://github.com/diegofigueroa79/btc-sentiment-analysis/blob/master/btc_violinplot.png)
+![Bitcoin_Violin_Plot](https://github.com/diegofigueroa79/btc-sentiment-analysis/blob/master/btc_violinplot.png)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
