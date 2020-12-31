@@ -1,4 +1,4 @@
-from analyzers import vader_analyze, blob_analyze
+from .analyzers import vader_analyze, blob_analyze
 
 class Article:
 	

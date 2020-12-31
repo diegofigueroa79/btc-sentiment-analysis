@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from newspaper import Article
-import article
+from . import article
 
 def scrape_btc_news():
 	
